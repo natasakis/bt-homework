@@ -47,11 +47,11 @@ switch ($r){
     echo "<br>";
     echo "<br>";
 
-    //zadatak3
-    $a=rand(100,1000)/100;
-    $b=rand(10,100)/10;
-    $c=rand(1,10);
-    echo "Zbir brojeva $a, $b i $c je " .$a+$b+$c .".";
+//zadatak3
+$a=rand(100,1000)/100;
+$b=rand(10,100)/10;
+$c=rand(1,10);
+echo "Zbir brojeva $a, $b i $c je " .$a+$b+$c .".";
 
 
 ?>
