@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="sr">
+    <head>
+        <meta charset="UTF-8">
+        <title>Register</title>
+            </head>
+    <body>
+        <main>
+            <form method="GET" action="register.php" type="_blank">
+                <fieldset>
+                    <legend>
+                        Forma registracije
+                    </legend>
+                    <label for="ime">Ime:</label>
+                    <input type="text" id="ime" name="ime" placeholder="Unesite Vase ime" maxlength="20" autofocus><br>
+                    <label for="prezime">Prezime:</label>
+                    <input type="text" id="prezime" name="prezime" placeholder="Unesite Vase prezime" maxlength="20"><br>
+                    <label for="pol" id="pol">Pol:</label>
+                    <span class="pol1">
+                        <input type="radio" id="zenski" name="pol" value="Z" class="radio-input">
+                        <label for="zenski" class="radio-label">Zenski</label>
+                    </span><br>
+                    <span class="pol1">
+                        <input type="radio" id="muski" name="pol" value="M" class="radio-input">
+                        <label for="muski" class="radio-label">Muski</label>
+                    </span><br>
+                    <span class="pol1">
+                        <input type="radio" id="nzm" name="pol" value="N" class="radio-input">
+                        <label for="nzm" class="radio-label">Preferiram da ne kazem</label><br>
+                    </span><br>
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" placeholder="Unesite Vas email"><br>
+                    <label for="password1">Lozinka:</label>
+                    <input type="password" id="password1" name="password1" ><br>
+                    <label for="password2">Ponovite lozinku:</label>
+                    <input type="password" id="password2" name="password2" ><br> 
+                    <label for="kurs" id="kurs">Odaberite kurseve:</label>
+                    <span id="checkkurs">
+                        <input type="checkbox" id="kurs1" name="kurs[]" value="JS"><label for="kurs1">JS</label>
+                        <input type="checkbox" id="kurs2" name="kurs[]" value="CSS"><label for="kurs2">CSS</label>
+                        <input type="checkbox" id="kurs3" name="kurs[]" value="SQL"><label for="kurs3">SQL</label>
+                        <input type="checkbox" id="kurs4" name="kurs[]" value="PHP"><label for="kurs4">PHP</label>
+                    </span><br><br>
+                    <label for="slika" id="slika1">Uploadujte Vasu sliku:</label>
+                    <input type="file" id="slika" name="slika" accept="image/png, image/jpg"><br><br>
+                    <button type="submit" value="Submit">Sacuvaj</button>
+                    <button type="reset" value="Reset">Ponisti</button>
+                </fieldset>
+            </form>
+        </main>
+    </body>
+</html>
