@@ -8,13 +8,13 @@ $sifra=$_GET['password1'];
 $sifra2=$_GET['password2'];
 $gender=$_GET['pol'];
 $lista_kurseva=$_GET['kurs'];
-if (!isset($name)) {
+if (empty($name)) {
     echo "Niste upisali ime!";
-}else if (!isset($lastname)){
+}else if (empty($lastname)){
     echo "Niste upisali prezime!";
-}else if (!isset($mail)){
+}else if (empty($mail)){
     echo "Niste upisali email!";
-}else if (!isset($sifra)){
+}else if (empty($sifra)){
     echo "Niste uneli sifru!";
 }else if ($sifra!=$sifra2){
     echo "Lozinke se ne poklapaju!";
