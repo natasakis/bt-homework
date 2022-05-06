@@ -1,0 +1,278 @@
+body{
+    width: 98%;
+    font-family: sans-serif;
+    position: absolute;
+    color: rgb(0,155,223);
+    background-color: rgb(245,250,252);
+}
+header{
+    width: 98%;
+    background-color: rgb(222,241,249);
+    height: 40px;
+    text-align: center;
+    margin-bottom: 20px;
+    position: sticky;
+    top: 10px;
+    z-index: 1; 
+}
+header div{
+    padding-top: 3px;
+    float:left;
+}
+header div span{
+    font-size: medium;
+    font-style: oblique;
+    font-weight: bold;
+    vertical-align: 10px;
+    color: palevioletred;
+}
+header nav{
+    transform: translateX(-5%);
+}
+header nav li{
+    display: inline-block;
+    padding: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+    vertical-align: -10px;
+}
+header nav li a{
+    text-decoration: none;
+    color: rgb(0,155,223);
+}
+header nav ul li:hover{
+    background-color: rgb(0,155,223);
+}
+header nav ul li a:hover{
+    color:white;
+}
+aside{
+    padding: 20px;
+    width: 20%;
+    float: left;
+}
+aside .aside_checkbox{
+    float: left;
+}
+.aside_checkbox label{
+    float: left;
+    width: 150px;
+    font-weight: bold;
+}
+.short-label{
+    width:50px;
+}
+.aside_checkbox ul{
+    margin: 0;
+    list-style: none;
+    float: left;
+    padding-bottom: 20px;
+}
+
+.aside_checkbox ul li label{
+    color:grey;
+    font-size: smaller;
+    font-weight: lighter;
+}
+:checked {
+    margin-left: 25px;
+  }
+
+main {
+    float: left;
+    display: grid;
+    width: 70%;
+    grid-template-columns: 33% 33% 33%;
+    color:rgb(54, 79, 79);    
+}
+.product{
+    margin-bottom: 50px;
+    margin: 10px;
+    background-color: white; 
+    border: 1px solid rgb(191, 226, 237);
+    border-radius: 10px;
+    text-align: center;
+    min-height: 400px;
+    padding-top: 10px;
+}
+.product_subdiv img{
+    margin: 10px;
+    margin-left: 15px;
+    margin-top:0;
+    padding-bottom: 10px;
+/*    min-width: 130px;*/
+    height: 180px;
+}
+.product_subdiv{
+  padding: 20px;
+  text-align: center;
+}
+.product_subsubdiv button{
+    color:white;
+    background-color: rgb(0,155,223);
+    height: 40px;
+    width: 200px;
+    font-weight: bolder;
+    border-radius: 5px;
+    border-style: none;
+    cursor: pointer;
+    vertical-align: middle;
+    padding-top: 12px;
+}
+
+.btn img {
+    float: left;   
+    transform: translateY(-20%);
+}
+.btn-txt {
+    width: 150px;
+    vertical-align: middle;
+    height: 40px;
+    float: right;
+}
+
+.product_subsubdiv button:hover{
+    background-color: rgb(254,114,52);
+    color:white;
+}
+.product_subsubdiv{
+    position: relative;
+    bottom: 0px;
+    width: 99%;
+    padding-top: 0px;
+}
+
+.product_subsubdiv p{
+    font-weight: bolder;
+}
+.snizenje{
+    text-decoration: line-through;
+    text-decoration-color: rgba(128,128,128,0.6);
+    color:rgba(128,128,128,0.6) ;
+}
+.product h6{
+    margin-top: 15px;
+    font-size: medium;
+    font-weight: 200;
+    text-align: center;
+}
+.product a{
+    text-decoration: none;
+    color: rgb(0,155,223);
+    
+}
+footer{
+    background-color: rgb(222,241,249);
+    width: 98%;
+    text-align: center;
+    clear: both;
+    height: 150px;
+    text-align: left;
+    padding-left: 40px;
+}
+footer nav{
+    width: 90%;
+    text-align: left;
+
+}
+footer nav section{
+    padding: 5px;
+    margin-left: 25px;
+    float: left;
+    width: 30%;
+}
+footer nav section h6{
+    font-size: small;
+    padding: 0px;
+    margin-bottom: 0cm;
+}
+
+footer nav li{
+    list-style: circle;
+    font-size: small;
+    text-decoration: none;
+    color: rgb(0,155,223);
+    font-weight: bold;
+}
+footer nav li a{
+    text-decoration: none;
+    color: rgb(0,155,223);
+}
+footer div a{
+    margin-right: 15px;
+    float: right;
+}
+
+#up_a{
+    height: 40px;
+    width: 40px;
+    margin: 2px;
+    border: 2px solid black;
+    border-radius: 50%;
+    position: fixed;
+    right: 50px;
+    bottom: 150px;
+}
+a:active {
+    color: forestgreen;
+  }
+#filter{
+    visibility: hidden;
+    height: 40px;
+    width: 40px;
+    margin: 2px;
+    border: 2px solid black;
+    border-radius: 50%;
+    position: fixed;
+    left: 20px;
+    top:70px;
+}
+#menu{
+    visibility: hidden;
+    height: 30px;
+    width: 30px;
+    position: sticky;
+    left: 90%;
+    top:12px;
+}
+@media only screen and (max-width:992px){
+    main{
+        grid-template-columns: 50% 50%;
+    }
+}
+@media only screen and (max-width:600px){
+    main{
+        clear: both;
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        
+    }
+    aside{
+        width: 80%;
+        display: grid;
+        grid-template-columns: 21% 28% 9%;
+        transform: translateX(7%);
+    }
+    header nav li a{
+        font-size: x-small;
+    }
+    main .product{
+        transform: translateX(33%);
+        width: 80%;
+    }
+}
+@media only screen and (max-width:390px){
+    aside{display: none;}
+    header nav{display:none;}
+    .product{
+        transform: translateX(15%);
+    }
+    .product_subsubdiv{
+        transform: translateY(-15%);
+    }
+    #filter, #menu{
+        visibility: visible;
+    }
+}
+
+
