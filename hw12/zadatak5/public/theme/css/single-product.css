@@ -132,7 +132,7 @@ button{
     border-top: 1px solid lightgrey;
     border-bottom: 1px solid lightgrey;
     color:rgb(54, 79, 79);
-    height: 50px;
+    min-height: 50px;
     float: left;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -190,7 +190,7 @@ aside .product_subsubdiv1{
 
 footer{
     background-color: rgb(222,241,249);
-    width: 98%;
+    width: 95%;
     text-align: center;
     clear: both;
     height: 150px;
@@ -206,7 +206,7 @@ footer nav section{
     padding: 5px;
     margin-left: 25px;
     float: left;
-    width: 30%;
+    width: 22%;
 }
 footer nav section h6{
     font-size: small;
@@ -228,6 +228,12 @@ footer nav li a{
 footer div a{
     margin-right: 15px;
     float: right;
+}
+footer div{
+    width: 8%;
+    float: right;
+
+
 }
 
 #up_a{
@@ -266,8 +272,43 @@ a:active {
     main{
         grid-template-columns: 50% 50%;
     }
+    aside .product img{
+        max-height: 100px;
+        max-width: 90px;
+    }
+    aside button{
+        width: 110px;
+        height: 32px;
+    }
+    aside .btn img {
+        display: none;
+    }
+    
+    aside .product h6{
+        margin-top: 15px;
+        font-size: medium;
+        font-weight: 200;
+        text-align: center;
+        width: 90%;
+        float: left;
+    }
+    aside .product a{
+        text-decoration: none;
+        color: rgb(0,155,223);
+        
+    }
+    .container h6{
+        float: left;
+    }
+    .product_subsubdiv{
+        float: left;
+    }
+    footer{
+        width: 93%;
+    }
 }
-@media only screen and (max-width:600px){
+
+@media only screen and (max-width:576px){
     main{
         clear: both;
         display: grid;
@@ -275,29 +316,14 @@ a:active {
         
     }
     aside{
-        width: 80%;
-        display: grid;
-        grid-template-columns: 21% 28% 9%;
-        transform: translateX(7%);
-    }
-    header nav li a{
-        font-size: x-small;
-    }
-    main .product{
-        transform: translateX(33%);
-        width: 80%;
+        display: none;
     }
 }
 @media only screen and (max-width:390px){
     aside{display: none;}
     header nav{display:none;}
-    .product{
-        transform: translateX(15%);
-    }
-    .product_subsubdiv{
-        transform: translateY(-15%);
-    }
-    #filter, #menu{
+    footer nav{display: none;}
+    #menu{
         visibility: visible;
     }
 }

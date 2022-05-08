@@ -135,7 +135,7 @@ legend{
 
 footer{
     background-color: rgb(222,241,249);
-    width: 98%;
+    width: 95%;
     text-align: center;
     clear: both;
     height: 150px;
@@ -151,7 +151,7 @@ footer nav section{
     padding: 5px;
     margin-left: 25px;
     float: left;
-    width: 30%;
+    width: 22%;
 }
 footer nav section h6{
     font-size: small;
@@ -173,6 +173,12 @@ footer nav li a{
 footer div a{
     margin-right: 15px;
     float: right;
+}
+footer div{
+    width: 8%;
+    float: right;
+
+
 }
 
 #up_a{
@@ -211,8 +217,12 @@ a:active {
     main{
         grid-template-columns: 50% 50%;
     }
+    footer{
+        width: 93%;
+    }
+
 }
-@media only screen and (max-width:600px){
+@media only screen and (max-width:576px){
     main{
         clear: both;
         display: grid;
@@ -236,13 +246,14 @@ a:active {
 @media only screen and (max-width:390px){
     aside{display: none;}
     header nav{display:none;}
+    footer nav{display: none;}
     .product{
         transform: translateX(15%);
     }
     .product_subsubdiv{
         transform: translateY(-15%);
     }
-    #filter, #menu{
+    #menu{
         visibility: visible;
     }
 }
